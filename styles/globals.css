@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.room-card {
+    overflow: hidden !important;
+    img {
+        object-fit: cover;
+        overflow: hidden;
+        height: 250px;
+        width: 100%;
+    }
+}
