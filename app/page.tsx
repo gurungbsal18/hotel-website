@@ -45,7 +45,7 @@ export default function Home() {
       ) : (
         <>No Data</>
       )}
-
+      <h1 className="header">Hello world</h1>
       <HomePageCheckInSection />
     </>
   );
