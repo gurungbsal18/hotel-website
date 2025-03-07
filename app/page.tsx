@@ -1,5 +1,9 @@
 import Image from "next/image";
 import { HotelRoomData } from "./api/RoomData";
+import { IoBedOutline } from "react-icons/io5";
+import { PiBathtub } from "react-icons/pi";
+import { IoWifiSharp } from "react-icons/io5";
+import HomePageCheckInSection from "@/components/HomePageCheckInSection";
 
 export default function Home() {
   return (
@@ -19,15 +23,20 @@ export default function Home() {
               />
               <div className="room-card-content px-5 py-2">
                 <div className="flex justify-between text-sm bg-blue-200 px-4 py-2 rounded-md text-black">
-                  <p>{`${list.amminity.balcony ? "balcony on" : "balcony off"}`}</p>
-                  <p>{list.amminity.bed}</p>
-                  <p>{`${list.amminity.hotShower ? "Hot shower on" : "Hot shower off"}`}</p>
-                  <p>
-                    wifi: {`${list.amminity.wifi ? "Wifi on" : "Wifi off"}`}
+                  <p className="flex items-center gap-1">
+                    <IoBedOutline />
+                    {list.amminity.bed}
+                  </p>
+                  <p className="flex items-center gap-1">
+                    <PiBathtub />
+                    {`${list.amminity.hotShower ? "Yes" : "No"}`}
+                  </p>
+                  <p className="flex items-center gap-1">
+                    <IoWifiSharp /> {`${list.amminity.wifi ? "Yes" : "No"}`}
                   </p>
                 </div>
 
-                <p>Price: NPR {list.price}</p>
+                <p>Price: NPR {list.price} / Night</p>
                 <p>Type: {list.roomType}</p>
               </div>
             </div>
@@ -36,6 +45,8 @@ export default function Home() {
       ) : (
         <>No Data</>
       )}
+
+      <HomePageCheckInSection />
     </>
   );
 }

@@ -7,7 +7,6 @@ interface HotelRoomProps {
         wifi: boolean,
         hotShower: boolean,
         bed: number,
-        balcony: boolean
     }
 }
 
@@ -21,7 +20,6 @@ export const HotelRoomData: HotelRoomProps[] = [
             wifi: true,
             hotShower: true,
             bed: 1,
-            balcony: true
         }
     },
     {
@@ -33,7 +31,6 @@ export const HotelRoomData: HotelRoomProps[] = [
             wifi: false,
             hotShower: true,
             bed: 2,
-            balcony: false
         }
     },
     {
@@ -45,7 +42,6 @@ export const HotelRoomData: HotelRoomProps[] = [
             wifi: true,
             hotShower: true,
             bed: 1,
-            balcony: true
         }
     },
 ]
