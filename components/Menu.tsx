@@ -9,6 +9,9 @@ export default function Menu() {
       title: "Our Rooms",
     },
     {
+      title: "Restaurant",
+    },
+    {
       title: "About us",
     },
     {
@@ -19,7 +22,7 @@ export default function Menu() {
     <div className="container py-5">
       <div className="flex justify-between items-center">
         <Image src="/Hotel-logo.svg" alt="Hotel Logo" height={100} width={67} />
-        <ul className="flex gap-2 items-center">
+        <ul className="flex gap-32 items-center">
           {menuItem.map((list, index) => (
             <li key={index} className="text-primary">
               {list.title}
