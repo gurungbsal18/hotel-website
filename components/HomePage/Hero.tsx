@@ -10,7 +10,7 @@ export default function Hero() {
     "Discover a world of comfort, luxury, and unparallel hospitality at our hotel. Nestled in the heart of city, our exquisite hotel is your home away from home, where every stay is a memorable experience";
   return (
     <>
-      <div className="container grid grid-cols-12 items-center gap-24 py-28 hero-section">
+      <div className="container grid grid-cols-12 items-center gap-24 py-16 hero-section">
         <div className="col-span-6 flex gap-8 flex-col">
           <h1 className="text-6xl font-extrabold text-primary">{title}</h1>
           <p>{subtitle}</p>
@@ -18,7 +18,7 @@ export default function Hero() {
             <Button radius="sm" size="lg" color="primary">
               Book your stay now
             </Button>
-            <Button radius="sm" size="lg" color="primary" variant="flat">
+            <Button radius="sm" size="lg" color="warning">
               Contact us
             </Button>
           </div>
@@ -32,7 +32,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="bg-yellow-500 py-8 shadow-md">
+      <div className="bg-warning py-9 shadow-md">
         <div className="container flex gap-8">
           <DateRangePicker
             size="sm"
