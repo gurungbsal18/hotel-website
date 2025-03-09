@@ -32,7 +32,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="bg-primary-50 py-8">
+      <div className="bg-yellow-500 py-8 shadow-md">
         <div className="container flex gap-8">
           <DateRangePicker
             size="sm"
