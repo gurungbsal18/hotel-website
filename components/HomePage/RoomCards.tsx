@@ -1,6 +1,7 @@
 import React from "react";
-import { HotelRoomData } from "@/app/api/RoomData";
 import Image from "next/image";
+
+import { HotelRoomData } from "@/app/api/RoomData";
 import { FiWifi } from "react-icons/fi";
 import { FiWifiOff } from "react-icons/fi";
 import { MdOutlineTv } from "react-icons/md";

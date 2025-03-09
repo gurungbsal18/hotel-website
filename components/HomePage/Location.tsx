@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { FaPlaneArrival } from "react-icons/fa6";
 
@@ -33,6 +32,7 @@ export default function Location() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7064.147533277554!2d85.3071212431779!3d27.715008604712473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fcb77fd4bd%3A0x58099b1deffed8d4!2sThamel%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1741516992969!5m2!1sen!2snp"
             width="600"
             height="450"
+            title="location map"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"

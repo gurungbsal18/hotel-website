@@ -1,4 +1,5 @@
 import React from "react";
+
 import Hero from "./Hero";
 import AccommodationSection from "./AccommodationSection";
 import RestaurantAndBarSection from "./RestaurantAndBarSection";

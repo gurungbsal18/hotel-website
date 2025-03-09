@@ -1,6 +1,7 @@
-import { Button } from "@heroui/button";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
+import { Button } from "@heroui/button";
 import { ThemeSwitch } from "./theme-switch";
 
 export default function Menu() {
