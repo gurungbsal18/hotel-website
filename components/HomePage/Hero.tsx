@@ -1,11 +1,13 @@
+"use client";
 import { Button } from "@heroui/button";
 import { DateRangePicker } from "@heroui/date-picker";
 import { Input } from "@heroui/input";
 import Image from "next/image";
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 export default function Hero() {
-  const title = "BOOK A ROOM TO REMEMBER";
+  const title = "BOOK A ROOM";
   const subtitle =
     "Discover a world of comfort, luxury, and unparallel hospitality at our hotel. Nestled in the heart of city, our exquisite hotel is your home away from home, where every stay is a memorable experience";
   return (
@@ -14,6 +16,13 @@ export default function Hero() {
         <div className="col-span-1 lg:col-span-6 flex gap-8 flex-col">
           <h1 className="text-3xl lg:text-4xl xl:text-6xl text-center lg:text-left font-extrabold text-primary">
             {title}
+            <Typewriter
+              options={{
+                strings: ["TO REMEMBER", "WITH A VIEW", "NEAR HERITAGE SITE"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
           <p className="text-center lg:text-left">{subtitle}</p>
           <div className="flex justify-center lg:justify-start gap-6">
