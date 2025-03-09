@@ -8,6 +8,7 @@ export default function Menu() {
   const menuItem = [
     {
       title: "Our Rooms",
+      link: "/room",
     },
     {
       title: "Restaurant",
