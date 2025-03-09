@@ -18,7 +18,7 @@ export default function Hero() {
             {title}
             <Typewriter
               options={{
-                strings: ["TO REMEMBER", "WITH A VIEW", "NEAR HERITAGE SITE"],
+                strings: ["TO REMEMBER", "WITH A VIEW", "AFFORDABLE PRICE"],
                 autoStart: true,
                 loop: true,
               }}
