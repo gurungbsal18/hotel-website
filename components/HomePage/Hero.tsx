@@ -10,11 +10,13 @@ export default function Hero() {
     "Discover a world of comfort, luxury, and unparallel hospitality at our hotel. Nestled in the heart of city, our exquisite hotel is your home away from home, where every stay is a memorable experience";
   return (
     <>
-      <div className="container grid grid-cols-12 items-center gap-24 py-16 hero-section">
-        <div className="col-span-6 flex gap-8 flex-col">
-          <h1 className="text-6xl font-extrabold text-primary">{title}</h1>
-          <p>{subtitle}</p>
-          <div className="flex gap-6">
+      <div className="container grid grid-cols-1 lg:grid-cols-12 items-center gap-12 xl:gap-24 py-16 hero-section">
+        <div className="col-span-1 lg:col-span-6 flex gap-8 flex-col">
+          <h1 className="text-3xl lg:text-4xl xl:text-6xl text-center lg:text-left font-extrabold text-primary">
+            {title}
+          </h1>
+          <p className="text-center lg:text-left">{subtitle}</p>
+          <div className="flex justify-center lg:justify-start gap-6">
             <Button radius="sm" size="lg" color="primary">
               Book your stay now
             </Button>
@@ -23,7 +25,7 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="col-span-6">
+        <div className="col-span-1 lg:col-span-6">
           <Image
             src="/room-images/hotel-hero.webp"
             alt="Hotel room"
@@ -33,7 +35,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="bg-warning py-9 shadow-md">
-        <div className="container flex gap-8">
+        <div className="container flex flex-col md:flex-row gap-8">
           <DateRangePicker
             size="sm"
             label="Stay duration"

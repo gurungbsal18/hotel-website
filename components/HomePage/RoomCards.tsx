@@ -11,11 +11,11 @@ export default function RoomCards() {
   return (
     <div>
       {HotelRoomData ? (
-        <div className="grid grid-cols-12 gap-5">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           {HotelRoomData.map((list) => (
             <div
               key={list.id}
-              className="col-span-4 bg-gray-50 shadow-md room-card relative"
+              className="col-span-1 md:col-span-2 lg:col-span-4 bg-gray-50 shadow-md room-card relative"
             >
               <Image
                 src={list.image}
