@@ -12,13 +12,13 @@ export default function Hero() {
     "Discover a world of comfort, luxury, and unparallel hospitality at our hotel. Nestled in the heart of city, our exquisite hotel is your home away from home, where every stay is a memorable experience";
   return (
     <>
-      <div className="container grid grid-cols-1 lg:grid-cols-12 items-center gap-12 xl:gap-24 py-16 hero-section">
+      <div className="container grid grid-cols-1 lg:grid-cols-12 items-center gap-12 xl:gap-16 py-16 hero-section">
         <div className="col-span-1 lg:col-span-6 flex gap-8 flex-col">
           <h1 className="text-3xl lg:text-4xl xl:text-6xl text-center lg:text-left font-extrabold text-primary">
             {title}
             <Typewriter
               options={{
-                strings: ["TO REMEMBER", "WITH A VIEW", "AFFORDABLE PRICE"],
+                strings: ["TO REMEMBER", "WITH A VIEW", "CHERISH MOMENTS"],
                 autoStart: true,
                 loop: true,
               }}

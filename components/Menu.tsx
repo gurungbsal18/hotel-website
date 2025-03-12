@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { Button } from "@heroui/button";
 import { ThemeSwitch } from "./theme-switch";
+import Link from "next/link";
 
 export default function Menu() {
   const menuItem = [
@@ -23,7 +24,14 @@ export default function Menu() {
   return (
     <div className="container py-5">
       <div className="flex justify-between items-center">
-        <Image src="/Hotel-logo.svg" alt="Hotel Logo" height={100} width={67} />
+        <Link href="/">
+          <Image
+            src="/Hotel-logo.svg"
+            alt="Hotel Logo"
+            height={100}
+            width={67}
+          />
+        </Link>
         <ul className="lg:flex gap-32 items-center hidden">
           {menuItem.map((list, index) => (
             <li key={index} className="text-primary">
