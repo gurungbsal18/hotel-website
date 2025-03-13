@@ -1,9 +1,38 @@
 .room-gallery {
-  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
   overflow: hidden;
+
+  .gallery-item {
+    flex: 0 0 auto; /* Prevents items from shrinking */
+    border-radius: 8px;
+    overflow: hidden;
+  }
   img {
-    width: 300px;
-    height: 300px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .room-gallery {
+    justify-content: center; /* Center images on mobile */
+  }
+
+  .gallery-item {
+    width: 100%; /* Each item takes full width */
+  }
+}
+
+// Media query for larger screens (4 images at a time)
+@media (min-width: 769px) {
+  .room-gallery {
+    justify-content: space-between; /* Spread out images on large screens */
+  }
+
+  .gallery-item {
+    width: 23%; /* 4 images side by side */
   }
 }

@@ -40,10 +40,10 @@ export default function RoomCards() {
                   <div className="flex justify-between items-center room-amminities">
                     <p className="flex gap-1 items-center">
                       <IoBedOutline />
-                      {list.amminity.bed}
+                      {list.amenity.bed}
                     </p>
                     <p className="flex items-center gap-1">
-                      {list.amminity.wifi ? (
+                      {list.amenity.wifi ? (
                         <>
                           <FiWifi /> WiFi
                         </>
@@ -54,7 +54,7 @@ export default function RoomCards() {
                       )}
                     </p>
                     <p className="flex gap-1 items-center">
-                      {list.amminity.teleVision ? (
+                      {list.amenity.teleVision ? (
                         <>
                           <MdOutlineTv /> Television
                         </>

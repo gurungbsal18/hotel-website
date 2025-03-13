@@ -1,5 +1,6 @@
 "use client";
 import { HotelRoomData } from "@/app/api/RoomData";
+import GallerySlider from "@/components/GallerySlider";
 import { Button } from "@heroui/button";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -67,7 +68,7 @@ export default function Page({ params }: RoomPageProps) {
       </div>
 
       {/* Room Gallery */}
-      {room.gallery && totalImages > 0 && (
+      {/* {room.gallery && totalImages > 0 && (
         <div className="mt-16 text-center">
           <h4 className="text-4xl text-primary font-bold mb-5">Gallery</h4>
           <div className="flex justify-center items-center gap-5">
@@ -89,7 +90,9 @@ export default function Page({ params }: RoomPageProps) {
             <Button onPress={nextHandle}>Next</Button>
           </div>
         </div>
-      )}
+      )} */}
+
+      <GallerySlider />
     </div>
   );
 }

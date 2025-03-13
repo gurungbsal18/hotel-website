@@ -6,7 +6,7 @@ interface HotelRoomProps {
     isDiscount?: number,
     discountPercent?: number,
     image: string,
-    amminity : {
+    amenity : {
         wifi: boolean,
         teleVision: boolean,
         bed: string,
@@ -29,7 +29,7 @@ export const HotelRoomData: HotelRoomProps[] = [
         isDiscount: 8000,
         discountPercent: 10,
         image: "/room-images/suite-room.webp",
-        amminity: {
+        amenity: {
             wifi: true,
             teleVision: true,
             bed: "1 King",
@@ -46,7 +46,7 @@ export const HotelRoomData: HotelRoomProps[] = [
         slug: 'deluxe-room',
         price: 4500,
         image: "/room-images/deluxe-room.webp",
-        amminity: {
+        amenity: {
             wifi: true,
             teleVision: true,
             bed: "1 King",
@@ -58,7 +58,7 @@ export const HotelRoomData: HotelRoomProps[] = [
         slug: 'twin-room',
         price: 2500,
         image: "/room-images/twin-room.webp",
-        amminity: {
+        amenity: {
             wifi: false,
             teleVision: false,
             bed: "2 beds",
