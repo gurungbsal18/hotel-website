@@ -1,0 +1,9 @@
+.room-gallery {
+  width: 100%;
+  overflow: hidden;
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

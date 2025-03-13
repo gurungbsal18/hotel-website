@@ -14,7 +14,10 @@ interface HotelRoomProps {
     detail?: {
         para1: string,
         para2?: string,
-    }
+    },
+    gallery?:
+string[]
+    
 }
 
 export const HotelRoomData: HotelRoomProps[] = [
@@ -35,6 +38,7 @@ export const HotelRoomData: HotelRoomProps[] = [
             para1: "Enjoy the diverse and convenient culinary offerings available at our hotel. Our on-site restaurants cater to all tastes and appetites, with The Fun Café and The Coffee Shop serving up delicious dishes from breakfast to dinner. For a serene dining experience, head to our rooftop restaurant, The Terrace Garden.",
             para2: "Satisfy your sweet tooth with delightful treats at The Pastry Shop or unwind with your preferred beverage at The Lobby Bar. For those who prefer dining in the privacy of their own room, we offer 24-hour room service."
         },
+        gallery: ["/room-images/suite-room.webp", "/room-images/deluxe-room.webp", "/room-images/twin-room.webp", "/room-images/suite-room.webp", "/room-images/deluxe-room.webp", "/room-images/twin-room.webp", "/room-images/suite-room.webp", "/room-images/deluxe-room.webp", "/room-images/twin-room.webp",]
     },
     {
         id:2,
