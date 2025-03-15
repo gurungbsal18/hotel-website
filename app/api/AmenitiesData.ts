@@ -21,7 +21,7 @@ interface AmenitiesDataProps {
 const AmenitiesData: AmenitiesDataProps[] = [
     {
         id: 1,
-        title: "Room Data",
+        title: "Room Service",
         icon: PiCallBellLight,
     },
     {
