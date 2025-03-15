@@ -2,6 +2,8 @@
 import { HotelRoomData } from "@/app/api/RoomData";
 import Image from "next/image";
 import React, { useState } from "react";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
+import { IoIosArrowDropleftCircle } from "react-icons/io";
 
 export default function GallerySlider() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -44,9 +46,13 @@ export default function GallerySlider() {
         )}
       </div>
 
-      <div className="gallery-controls flex justify-between">
-        <button onClick={prevHandle}>Prev</button>
-        <button onClick={nextHandle}>Next</button>
+      <div className="gallery-controls flex justify-center gap-4 mt-4">
+        <button onClick={prevHandle}>
+          <IoIosArrowDropleftCircle size={32} className="text-primary" />
+        </button>
+        <button onClick={nextHandle}>
+          <IoIosArrowDroprightCircle size={32} className="text-primary" />
+        </button>
       </div>
     </>
   );
