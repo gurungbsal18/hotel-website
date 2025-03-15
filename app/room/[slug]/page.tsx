@@ -67,31 +67,6 @@ export default function Page({ params }: RoomPageProps) {
         </div>
       </div>
 
-      {/* Room Gallery */}
-      {/* {room.gallery && totalImages > 0 && (
-        <div className="mt-16 text-center">
-          <h4 className="text-4xl text-primary font-bold mb-5">Gallery</h4>
-          <div className="flex justify-center items-center gap-5">
-            <Button onPress={prevHandle}>Prev</Button>
-            <div className="flex gap-4 overflow-hidden">
-              {room.gallery
-                .slice(currentIndex, currentIndex + imagesPerView)
-                .map((img, index) => (
-                  <Image
-                    key={index}
-                    src={img}
-                    alt={`${room.roomType} Image ${currentIndex + index + 1}`}
-                    height={250}
-                    width={250}
-                    className="rounded-md shadow-md"
-                  />
-                ))}
-            </div>
-            <Button onPress={nextHandle}>Next</Button>
-          </div>
-        </div>
-      )} */}
-
       <GallerySlider />
     </div>
   );
