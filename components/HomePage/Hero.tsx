@@ -5,6 +5,7 @@ import { Input } from "@heroui/input";
 import Image from "next/image";
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   const title = "BOOK A ROOM";
@@ -34,14 +35,19 @@ export default function Hero() {
             </Button>
           </div>
         </div>
-        <div className="col-span-1 lg:col-span-6">
+        <motion.div
+          className="col-span-1 lg:col-span-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           <Image
             src="/room-images/hotel-hero.webp"
             alt="Hotel room"
             height={1920}
             width={1080}
           />
-        </div>
+        </motion.div>
       </div>
       <div className="bg-warning py-9 shadow-md">
         <div className="container flex flex-col md:flex-row gap-8">

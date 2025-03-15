@@ -1,15 +1,22 @@
+"use client";
 import { Button } from "@heroui/button";
 import React from "react";
 import RoomCards from "./RoomCards";
+import { motion } from "framer-motion";
 
 export default function AccommodationSection() {
   return (
     <div className="container py-16">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold text-primary uppercase">
+          <motion.h1
+            className="text-2xl lg:text-3xl xl:text-4xl font-extrabold text-primary uppercase"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 1 }}
+          >
             Accommodation
-          </h1>
+          </motion.h1>
           <Button
             color="primary"
             size="lg"
