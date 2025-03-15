@@ -34,9 +34,11 @@ export default function Menu() {
         </Link>
         <ul className="lg:flex gap-32 items-center hidden">
           {menuItem.map((list, index) => (
-            <li key={index} className="text-primary">
-              {list.title}
-            </li>
+            <Link href={list?.link || ""}>
+              <li key={index} className="text-primary">
+                {list.title}
+              </li>
+            </Link>
           ))}
         </ul>
         <div className="flex gap-2 items-center">
