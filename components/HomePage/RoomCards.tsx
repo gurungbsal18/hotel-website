@@ -18,7 +18,7 @@ export default function RoomCards() {
             <Link
               href={`/room/${list.slug}`}
               key={list.id}
-              className="col-span-1 md:col-span-2 lg:col-span-4 bg-gray-50 shadow-md room-card relative"
+              className="col-span-1 md:col-span-2 lg:col-span-4  shadow-2xl room-card relative"
             >
               <div>
                 <Image
